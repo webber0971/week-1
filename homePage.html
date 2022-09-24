@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1">
+        <title>weHelp-week1</title>
+        <style type="text/css">
+            body{margin: 0;padding: 0px;font-size: 20px;}
+            .box1{height: 30px;vertical-align:middle;margin-top: 10px;}
+            .box1RightText{
+                display: inline-block ; float: right;
+            }
+            .box1RightPhoto{
+                height:0px;width: 0px;
+            }
+            .box2{padding: 0px;width:100%; height: 300px;background-color: rgb(176, 219, 236);margin-bottom: 20px; text-align: center; line-height: 300px;}
+            .box3{width: 1200px;font-size: 20px;display: flex;justify-content: center;align-items: center;
+                    display: flex;justify-content: center;flex-wrap: wrap;}
+            .box3cell{
+                width: 595px;height: 50px; background-color: rgb(176, 219, 236); flex: none;margin-right: 5px;margin-bottom:10px
+            }
+            .photoInBox3{
+                height:50px;width:80px
+            }
+            .box4{width: 1200px;font-size: 20px;display: flex;justify-content: center;align-items: center;
+                    display: flex;justify-content: center;flex-wrap: wrap;}
+            .box4cell{
+                width: 295px;margin-right: 5px;margin-bottom: 10px;background-color:rgb(176, 219, 236);flex: none;text-align: center;
+            }
+            .box4out{
+                display: flex;justify-content: center;align-items: center;
+            }
+            .photo{
+                width:295px
+            }
+
+            @media only screen and (max-width: 1220px) {
+                .box3{
+                    width: 90%;font-size: 20px;display: flex;justify-content: center;align-items: center;
+                    display: flex;justify-content: center;flex-wrap: wrap;
+                }
+                .box3cell{
+                    width: 48%;height: 50px; background-color: rgb(176, 219, 236); flex: none;margin-right: 10px;margin-bottom:10px
+                }
+
+
+                .box4{width: 90%;font-size: 20px;display: flex;justify-content: center;align-items: center;
+                    display: flex;justify-content: center;flex-wrap: wrap}
+                .box4cell{width: 48%;margin-right: 10px;margin-bottom: 10px;background-color:rgb(176, 219, 236);flex: none;}
+                .photo{width: 100%;}
+            }
+
+
+            @media only screen and (max-width: 600px) {
+                .box1{height: 30px;vertical-align:middle}
+                .box1RightText{display: none;
+                }
+                .box1RightPhoto{
+                    float: right;
+                    height:30px;
+                    width: 30px;
+                    vertical-align:middle;
+                    margin-top: -3px;
+                }
+                
+
+                .box3{
+                    width: 90%;font-size: 20px;display: flex;justify-content: center;align-items: center;
+                    display: flex;justify-content: center;flex-wrap: wrap;
+                }
+                .box3cell{
+                    width: 100%;height: 50px; background-color: rgb(176, 219, 236); flex: none;margin-right: 10px;margin-bottom:10px
+                }
+
+
+
+                .box4{width: 90%;font-size: 20px;display: flex;justify-content: center;align-items: center;
+                    display: flex;justify-content: center}
+                .box4cell{width: 100%;margin-right: 10px;margin-bottom: 10px;background-color:rgb(176, 219, 236);flex: none;}
+                .photo{width: 100%;}
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="box1">
+            <div style="display:inline-block">My Website</div>
+            <div class="box1RightText" >
+                <div style="display: inline-block;">Item 1</div>
+                <div style="display: inline-block;">Item 2</div>
+                <div style="display: inline-block;">Item 3</div>
+                <div style="display: inline-block;">Item 4</div>
+            </div>
+            <div class="box1RightPhoto" style="height: 30px;display: inline-block;">
+                <img  src="list.png" class="box1RightPhoto" width="30px" height="30px">
+            </div>
+            
+        </div>
+        <div class="box2" style="font-weight:bold">
+            Welcome to MyHome
+            
+        </div>
+
+        <div style="display: flex;justify-content: center;align-items: center;">
+            <div class="box3">
+
+                <div class="box3cell" >
+                    <div style="display:inline-block; vertical-align: middle;"><img  src="photo.png" class="photoInBox3"></div>
+                    <div style="display: inline-block;height: 50px;line-height: 50px ;vertical-align: middle;">Promotion2</div>
+                </div>
+                <div class="box3cell">
+                    <div style="display:inline-block; vertical-align: middle;"><img src="photo.png" class="photoInBox3"></div>
+                    <div style="display: inline-block;height: 50px;line-height: 50px ;vertical-align: middle;">Promotion2</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="box4out" >
+            <div class="box4">
+                <div class="box4cell"><div style="flex:none ;"><img src="photo.png" class="photo"></div><div style="flex:none ;">Table1</div></div>
+                <div class="box4cell"><div style="flex:none ;"><img src="photo.png" class="photo"></div><div style="flex:none ;">Table2</div></div>
+                <div class="box4cell"><div style="flex:none ;"><img src="photo.png" class="photo"></div><div style="flex:none ;">Table3</div></div>
+                <div class="box4cell"><div style="flex:none ;"><img src="photo.png" class="photo"></div><div style="flex:none ;">Table4</div></div>
+
+                
+            </div>
+        
+        </div>
+        
+
+    </body>
+</html>
